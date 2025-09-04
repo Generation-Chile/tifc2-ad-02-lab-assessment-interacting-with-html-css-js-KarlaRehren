@@ -1,5 +1,37 @@
-html {
-    height: 100%;
-    width: 100%;
-  }
-  
+/* CSS Section */
+
+/* Make all H1 elements green */
+h1 {
+  color: green;
+}
+
+/* Make the class "blue" apply blue color to text */
+.blue {
+  color: blue;
+}
+
+/* Make ID "red" apply red color to text */
+#red {
+  color: red !important;
+}
+
+/* Additional styling for better presentation */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+img {
+  max-width: 300px;
+  height: auto;
+  margin: 10px 0;
+}
+
+.clickable {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.clickable:hover {
+  text-decoration: underline;
+}

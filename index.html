@@ -1,23 +1,68 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  
+  <title>Hello World!</title>
+  <style>
+    /* CSS Section */
+    
+    /* Make all H1 elements green */
+    h1 {
+      color: green;
+    }
+    
+    /* Make the class "blue" apply blue color to text */
+    .blue {
+      color: blue;
+    }
+    
+    /* Make ID "red" apply red color to text */
+    #red {
+      color: red;
+    }
+    
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    
+    img {
+      max-width: 300px;
+      height: auto;
+      margin: 10px 0;
+    }
+    
+    .clickable {
+      cursor: pointer;
+    }
+  </style>
 </head>
-
 <body>
+  <!-- HTML Section -->
+  <h1 id="red">Hello world!</h1>
+  
+  <img src="Pictures/J - Jellyfish.jpg" alt="Jellyfishfrom Pictures">
+  
+  <h1 id="orange-header">Hello world</h1>
+  <h1 class="blue">Hello world</h1>
+  <h1 class="blue">Hello world</h1>
+  <h1 id="clickable-header" class="clickable">Hello world</h1>
 
-  
-  
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <script>
+    // JavaScript Section - Simple and clean
+    
+    // 1. Change first "Hello World!" to "GoodBye"
+    document.getElementById('red').innerHTML = 'GoodBye';
+    
+    // 2. Change a header to orange  
+    document.getElementById('orange-header').style.color = 'orange';
+    
+    // 3. Make clickable header turn brown when clicked
+    document.getElementById('clickable-header').onclick = function() {
+      this.style.color = 'brown';
+    };
+  </script>
 </body>
-
 </html>
